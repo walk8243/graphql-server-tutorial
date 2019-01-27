@@ -1,0 +1,17 @@
+{
+  "name": "graphql-server-tutorial",
+  "version": "1.0.0",
+  "description": "GitHubのAPI v4を使ったサーバサイドのチュートリアル",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": "git@github.com:walk8243/graphql-server-tutorial.git",
+  "author": "walk8243 <walk8243@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1"
+  }
+}
