@@ -1,6 +1,6 @@
 {
   "name": "graphql-server-tutorial",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "GitHubのAPI v4を使ったサーバサイドのチュートリアル",
   "main": "app.js",
   "scripts": {

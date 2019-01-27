@@ -1,16 +1,22 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const { buildSchema } = require('graphql');
+const schemaJS = require('./schema');
 
-const schema = buildSchema(`
-  type Query {
-    hello: String
+const schema = buildSchema(schemaJS.getSchema('./schema'));
+
+class Human {
+  name() {
+    return "John";
   }
-`);
+}
 
 const root = {
   hello: () => {
     return 'Hello world!';
+  },
+  human: () => {
+    return new Human();
   },
 };
 
