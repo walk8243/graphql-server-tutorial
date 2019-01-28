@@ -12,7 +12,7 @@ function getSchema(schemaDirpath) {
   }, "");
 }
 
-function getSchemaFiles(schemaDirpath) {
+function getSchemaFiles(schemaDirpath = './') {
   const regexp = /\.gql$/i;
   return readDir(schemaDirpath).filter((filepath) => regexp.test(filepath));
 }
