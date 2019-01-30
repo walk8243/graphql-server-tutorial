@@ -1,3 +1,4 @@
 type Human {
-  name: String
+  name: String!
+  age(age: Int!): Int!
 }
